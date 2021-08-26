@@ -1,3 +1,5 @@
+/* estilização geral */
+
 * {
   font-family: "Source Sans Pro";
   margin: 0;
@@ -8,6 +10,8 @@ body {
   width: 100vw;
   box-sizing: border-box;
 }
+
+/* estilização do header */
 
 nav {
   height: 7%;
@@ -69,9 +73,49 @@ header {
   color: #ffc957;
 }
 
+/* estilização da main */
+
 main {
-  height: 33%;
+  height: min-content;
+  padding: 30px 100px;
+  text-align: center;
 }
+
+#wrapper {
+  max-width: 100%;
+  margin: 40px 0;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  cursor: pointer;
+}
+
+#content {
+  display: grid;
+  grid-gap: 66px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 180px;
+  height: 180px;
+  background: green;
+}
+
+/* estilização do footer */
 
 footer {
   height: 30%;
