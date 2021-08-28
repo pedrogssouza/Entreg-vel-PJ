@@ -45,6 +45,7 @@ header {
   background-image: url("assets/coffee-beans-close-up.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* background- */
   display: flex;
   align-items: center;
   z-index: -1;
@@ -103,16 +104,77 @@ main {
 
 #content {
   display: grid;
-  grid-gap: 66px;
+  grid-gap: 42px;
   grid-auto-flow: column;
   margin: auto;
   box-sizing: border-box;
 }
 
 .item {
-  width: 180px;
-  height: 180px;
-  background: green;
+  width: 260px;
+  min-height: 300px;
+  background: linear-gradient(45deg, #2deb92 0%, #fdbb2d 100%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-content {
+  padding: 20px;
+  width: 85%;
+}
+
+.item-img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 16px;
+}
+
+.item-title {
+  text-align: left;
+}
+
+.item-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.item-show-details {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.item-order-button {
+  background: #ffb20e;
+  box-shadow: 0px 5px 10px rgba(253, 114, 92, 0.22),
+    0px 20px 40px rgba(250, 99, 35, 0.24);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  width: 96%;
+  height: 40px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.item-dropdown-data-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.item-dropdown-data-hide {
+  display: none;
 }
 
 /* estilização do footer */
