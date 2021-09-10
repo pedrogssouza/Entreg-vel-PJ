@@ -26,9 +26,9 @@ botao.addEventListener("click", (e) => {
 function handleDropdownClass(item) {
   //mostrar dados a mais do item
 
-  const dropdownButton = item.children[0].children[2].children[1];
-  const dropdownData = item.children[0].children[3];
-  const dropdownImg = item.children[0].children[2].children[1];
+  const dropdownButton = item.children[0].children[2].children[1],
+    dropdownData = item.children[0].children[3],
+    dropdownImg = item.children[0].children[2].children[1];
 
   let hide = true;
 

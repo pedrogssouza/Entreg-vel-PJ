@@ -23,6 +23,13 @@ nav {
   padding: 0 100px;
 }
 
+.logo {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: -70px;
+}
+
 .card-login {
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26),
@@ -50,6 +57,7 @@ header {
   background-size: cover;
   display: flex;
   align-items: center;
+  opacity: 0.97;
 }
 
 .header-text-card {
@@ -57,6 +65,7 @@ header {
   height: min-content;
   width: 450px;
   gap: 15px;
+  text-shadow: 2px 2px black;
 }
 
 .header-text-card > h1 {
@@ -64,8 +73,6 @@ header {
   font-size: 70px;
   line-height: 100%;
   color: #faaa01;
-  text-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01),
-    0px 27px 82px rgba(255, 174, 0, 0.28);
 }
 
 .header-text-card > p {
@@ -109,6 +116,7 @@ main {
   grid-auto-flow: column;
   margin: auto;
   box-sizing: border-box;
+  align-items: flex-start;
 }
 
 /* estilização dos itens */
@@ -122,30 +130,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.item-1 {
-  background: linear-gradient(45deg, #13fc39 0%, #026428 100%);
-}
-
-.item-2 {
-  background: linear-gradient(45deg, #22c1c3 0%, #8343c4 100%);
-}
-
-.item-3 {
-  background: linear-gradient(45deg, #fdbb2d 0%, #904ed4 100%);
-}
-
-.item-4 {
-  background: linear-gradient(45deg, #a77b1c 0%, #f3ffae 100%);
-}
-
-.item-5 {
-  background: linear-gradient(45deg, #ffae62 0%, #e24e21 100%);
-}
-
-.item-6 {
-  background: linear-gradient(45deg, #ff7c02 0%, #ee150e 100%);
+  background: linear-gradient(0deg, #857041 0%, #fdc13f 100%);
 }
 
 .item-content {
@@ -187,6 +172,11 @@ main {
 .item-dropdown-data-hide {
   display: none;
   height: 0;
+}
+
+#item-dropdown-data-show > * {
+  font-weight: 600;
+  color: rgb(5, 3, 3);
 }
 
 .item-order-button {
